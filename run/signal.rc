@@ -1,0 +1,114 @@
+Magic 271485
+Revision Verdi_T-2022.06-SP1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 120 2048 1081 218 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/run/wave.fsdb" "/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/run/wave.fsdb.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 14347.052520 14676.224290
+cursor 14535.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 45
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/run/wave.fsdb.fsdb"
+addSignal -h 15 /tb_top/dut/clk
+addSignal -h 15 -UNSIGNED -HEX -holdScope cs[1:0]
+addSignal -h 15 -holdScope Row_done
+addSignal -h 15 -holdScope Row_done_en
+addSignal -h 15 -UNSIGNED -UDEC -holdScope Q_K_V_S_Z_reg[2:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope RowNum_reg[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope XNum_reg[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope ColNum_reg[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope add_Base_R[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope Base_R[15:0]
+addSignal -h 15 -holdScope base_W_force
+addSignal -h 15 -UNSIGNED -UDEC -holdScope add_Base_W[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope Base_W[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope Base_S[15:0]
+addSignal -h 15 -holdScope Base_S_en
+addSignal -h 15 -UNSIGNED -UDEC -holdScope Size_W[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope Size_R[15:0]
+addGroup "G2"
+addSignal -h 15 /tb_top/dut/EndCalc
+addSignal -h 15 -holdScope Count2_deduct
+addSignal -h 15 -holdScope Count2_stay
+addSignal -h 15 -holdScope Count2_en
+addSignal -h 15 -UNSIGNED -UDEC -holdScope Count2[15:0]
+addSignal -h 15 -2COMP -UDEC -holdScope Count2_add[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope dut__tb__sram_result_read_address[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope tb__dut__sram_result_read_data[31:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope Count3[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope dut__tb__sram_result_write_address[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope dut__tb__sram_result_write_data[31:0]
+addGroup "G3"
+addSignal -h 15 /tb_top/dut/Count1_deduct
+addSignal -h 15 -holdScope Count1_en
+addSignal -h 15 -holdScope Count1_stay
+addSignal -h 15 -UNSIGNED -UDEC -holdScope Count1[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope dut__tb__sram_scratchpad_read_address[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope tb__dut__sram_scratchpad_read_data[31:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope dut__tb__sram_input_read_address[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope tb__dut__sram_input_read_data[31:0]
+addGroup "G5"
+addSignal -h 15 -UNSIGNED -UDEC /tb_top/dut/A[31:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope B[31:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope accum_result[31:0]
+addGroup "G6"
+addSignal -h 15 -UNSIGNED -UDEC /tb_top/dut/dut__tb__sram_weight_read_address[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope tb__dut__sram_weight_read_data[31:0]
+addGroup "G7"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/run/wave.fsdb.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/tb_top"
+"/tb_top/dut"
+
+SCOPE_LIST_BEGIN
+"/tb_top"
+"/tb_top/dut"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

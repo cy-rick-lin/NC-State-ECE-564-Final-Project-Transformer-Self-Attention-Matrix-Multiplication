@@ -1,0 +1,190 @@
+#e1(14Nov2024:16:39:27): source ./xcelium.d/env.d/env.history.14Nov2024_16_39_27
+s1(14Nov2024:16:39:27):  xrun ../testbench/testbench.sv ../testbench/sram.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e2(14Nov2024:16:39:57): source ./xcelium.d/env.d/env.history.14Nov2024_16_39_57
+s2(14Nov2024:16:39:57):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e3(14Nov2024:16:41:20): source ./xcelium.d/env.d/env.history.14Nov2024_16_41_20
+s3(14Nov2024:16:41:20):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e4(14Nov2024:17:02:14): source ./xcelium.d/env.d/env.history.14Nov2024_17_02_14
+s4(14Nov2024:17:02:14):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e5(14Nov2024:17:08:03): source ./xcelium.d/env.d/env.history.14Nov2024_17_08_03
+s5(14Nov2024:17:08:03):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e6(14Nov2024:17:08:21): source ./xcelium.d/env.d/env.history.14Nov2024_17_08_21
+s6(14Nov2024:17:08:21):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e7(14Nov2024:17:08:31): source ./xcelium.d/env.d/env.history.14Nov2024_17_08_31
+s7(14Nov2024:17:08:31):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e8(14Nov2024:17:09:54): source ./xcelium.d/env.d/env.history.14Nov2024_17_09_54
+s8(14Nov2024:17:09:54):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e9(14Nov2024:17:10:00): source ./xcelium.d/env.d/env.history.14Nov2024_17_10_00
+s9(14Nov2024:17:10:00):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e10(14Nov2024:17:10:17): source ./xcelium.d/env.d/env.history.14Nov2024_17_10_17
+s10(14Nov2024:17:10:17):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e11(14Nov2024:17:10:30): source ./xcelium.d/env.d/env.history.14Nov2024_17_10_30
+s11(14Nov2024:17:10:30):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e12(14Nov2024:20:53:16): source ./xcelium.d/env.d/env.history.14Nov2024_20_53_16
+s12(14Nov2024:20:53:16):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e13(14Nov2024:20:54:22): source ./xcelium.d/env.d/env.history.14Nov2024_20_54_22
+s13(14Nov2024:20:54:22):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e14(14Nov2024:21:00:50): source ./xcelium.d/env.d/env.history.14Nov2024_21_00_50
+s14(14Nov2024:21:00:50):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e15(14Nov2024:21:21:48): source ./xcelium.d/env.d/env.history.14Nov2024_21_21_48
+s15(14Nov2024:21:21:48):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e16(14Nov2024:21:50:31): source ./xcelium.d/env.d/env.history.14Nov2024_21_50_31
+s16(14Nov2024:21:50:31):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e17(14Nov2024:22:39:48): source ./xcelium.d/env.d/env.history.14Nov2024_22_39_48
+s17(14Nov2024:22:39:48):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e18(14Nov2024:22:45:53): source ./xcelium.d/env.d/env.history.14Nov2024_22_45_53
+s18(14Nov2024:22:45:53):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e19(14Nov2024:23:05:20): source ./xcelium.d/env.d/env.history.14Nov2024_23_05_20
+s19(14Nov2024:23:05:20):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e20(14Nov2024:23:12:29): source ./xcelium.d/env.d/env.history.14Nov2024_23_12_29
+s20(14Nov2024:23:12:29):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e21(14Nov2024:23:17:58): source ./xcelium.d/env.d/env.history.14Nov2024_23_17_58
+s21(14Nov2024:23:17:58):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e22(14Nov2024:23:19:55): source ./xcelium.d/env.d/env.history.14Nov2024_23_19_55
+s22(14Nov2024:23:19:55):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e23(14Nov2024:23:43:52): source ./xcelium.d/env.d/env.history.14Nov2024_23_43_52
+s23(14Nov2024:23:43:52):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e24(15Nov2024:13:29:43): source ./xcelium.d/env.d/env.history.15Nov2024_13_29_43
+s24(15Nov2024:13:29:43):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e25(15Nov2024:13:29:57): source ./xcelium.d/env.d/env.history.15Nov2024_13_29_57
+s25(15Nov2024:13:29:57):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e26(15Nov2024:13:30:25): source ./xcelium.d/env.d/env.history.15Nov2024_13_30_25
+s26(15Nov2024:13:30:25):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e27(15Nov2024:13:35:10): source ./xcelium.d/env.d/env.history.15Nov2024_13_35_10
+s27(15Nov2024:13:35:10):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e28(15Nov2024:13:35:30): source ./xcelium.d/env.d/env.history.15Nov2024_13_35_30
+s28(15Nov2024:13:35:30):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e29(15Nov2024:13:36:10): source ./xcelium.d/env.d/env.history.15Nov2024_13_36_10
+s29(15Nov2024:13:36:10):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e30(15Nov2024:13:40:24): source ./xcelium.d/env.d/env.history.15Nov2024_13_40_24
+s30(15Nov2024:13:40:24):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e31(15Nov2024:13:40:52): source ./xcelium.d/env.d/env.history.15Nov2024_13_40_52
+s31(15Nov2024:13:40:52):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e32(15Nov2024:13:41:38): source ./xcelium.d/env.d/env.history.15Nov2024_13_41_38
+s32(15Nov2024:13:41:38):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e33(15Nov2024:13:46:24): source ./xcelium.d/env.d/env.history.15Nov2024_13_46_24
+s33(15Nov2024:13:46:24):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e34(15Nov2024:13:48:35): source ./xcelium.d/env.d/env.history.15Nov2024_13_48_35
+s34(15Nov2024:13:48:35):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e35(15Nov2024:13:50:38): source ./xcelium.d/env.d/env.history.15Nov2024_13_50_38
+s35(15Nov2024:13:50:38):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e36(15Nov2024:13:50:52): source ./xcelium.d/env.d/env.history.15Nov2024_13_50_52
+s36(15Nov2024:13:50:52):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e37(15Nov2024:13:53:46): source ./xcelium.d/env.d/env.history.15Nov2024_13_53_46
+s37(15Nov2024:13:53:46):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e38(15Nov2024:13:57:05): source ./xcelium.d/env.d/env.history.15Nov2024_13_57_05
+s38(15Nov2024:13:57:05):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e39(15Nov2024:13:58:27): source ./xcelium.d/env.d/env.history.15Nov2024_13_58_27
+s39(15Nov2024:13:58:27):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e40(15Nov2024:14:02:28): source ./xcelium.d/env.d/env.history.15Nov2024_14_02_28
+s40(15Nov2024:14:02:28):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e41(15Nov2024:14:03:08): source ./xcelium.d/env.d/env.history.15Nov2024_14_03_08
+s41(15Nov2024:14:03:08):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e42(15Nov2024:14:06:40): source ./xcelium.d/env.d/env.history.15Nov2024_14_06_40
+s42(15Nov2024:14:06:40):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e43(15Nov2024:14:08:49): source ./xcelium.d/env.d/env.history.15Nov2024_14_08_49
+s43(15Nov2024:14:08:49):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e44(15Nov2024:14:10:57): source ./xcelium.d/env.d/env.history.15Nov2024_14_10_57
+s44(15Nov2024:14:10:57):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e45(15Nov2024:14:13:33): source ./xcelium.d/env.d/env.history.15Nov2024_14_13_33
+s45(15Nov2024:14:13:33):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e46(15Nov2024:14:21:08): source ./xcelium.d/env.d/env.history.15Nov2024_14_21_08
+s46(15Nov2024:14:21:08):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e47(15Nov2024:14:28:22): source ./xcelium.d/env.d/env.history.15Nov2024_14_28_22
+s47(15Nov2024:14:28:22):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e48(15Nov2024:14:28:47): source ./xcelium.d/env.d/env.history.15Nov2024_14_28_47
+s48(15Nov2024:14:28:47):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e49(15Nov2024:15:35:16): source ./xcelium.d/env.d/env.history.15Nov2024_15_35_16
+s49(15Nov2024:15:35:16):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e50(15Nov2024:15:41:22): source ./xcelium.d/env.d/env.history.15Nov2024_15_41_22
+s50(15Nov2024:15:41:22):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e51(15Nov2024:15:41:52): source ./xcelium.d/env.d/env.history.15Nov2024_15_41_52
+s51(15Nov2024:15:41:52):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e52(15Nov2024:15:53:43): source ./xcelium.d/env.d/env.history.15Nov2024_15_53_43
+s52(15Nov2024:15:53:43):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e53(15Nov2024:15:54:37): source ./xcelium.d/env.d/env.history.15Nov2024_15_54_37
+s53(15Nov2024:15:54:37):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e54(15Nov2024:15:57:38): source ./xcelium.d/env.d/env.history.15Nov2024_15_57_38
+s54(15Nov2024:15:57:38):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e55(15Nov2024:15:58:04): source ./xcelium.d/env.d/env.history.15Nov2024_15_58_04
+s55(15Nov2024:15:58:04):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e56(15Nov2024:16:06:26): source ./xcelium.d/env.d/env.history.15Nov2024_16_06_26
+s56(15Nov2024:16:06:26):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e57(15Nov2024:16:07:12): source ./xcelium.d/env.d/env.history.15Nov2024_16_07_12
+s57(15Nov2024:16:07:12):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e58(15Nov2024:16:12:48): source ./xcelium.d/env.d/env.history.15Nov2024_16_12_48
+s58(15Nov2024:16:12:48):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e59(15Nov2024:16:22:01): source ./xcelium.d/env.d/env.history.15Nov2024_16_22_01
+s59(15Nov2024:16:22:01):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e60(15Nov2024:16:23:06): source ./xcelium.d/env.d/env.history.15Nov2024_16_23_06
+s60(15Nov2024:16:23:06):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e61(15Nov2024:16:51:01): source ./xcelium.d/env.d/env.history.15Nov2024_16_51_01
+s61(15Nov2024:16:51:01):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e62(15Nov2024:16:58:04): source ./xcelium.d/env.d/env.history.15Nov2024_16_58_04
+s62(15Nov2024:16:58:04):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e63(15Nov2024:19:05:31): source ./xcelium.d/env.d/env.history.15Nov2024_19_05_31
+s63(15Nov2024:19:05:31):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e64(15Nov2024:19:05:42): source ./xcelium.d/env.d/env.history.15Nov2024_19_05_42
+s64(15Nov2024:19:05:42):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e65(15Nov2024:20:39:15): source ./xcelium.d/env.d/env.history.15Nov2024_20_39_15
+s65(15Nov2024:20:39:15):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e66(15Nov2024:20:39:28): source ./xcelium.d/env.d/env.history.15Nov2024_20_39_28
+s66(15Nov2024:20:39:28):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e67(15Nov2024:20:47:02): source ./xcelium.d/env.d/env.history.15Nov2024_20_47_02
+s67(15Nov2024:20:47:02):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e68(15Nov2024:20:47:46): source ./xcelium.d/env.d/env.history.15Nov2024_20_47_46
+s68(15Nov2024:20:47:46):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e69(15Nov2024:20:48:48): source ./xcelium.d/env.d/env.history.15Nov2024_20_48_48
+s69(15Nov2024:20:48:48):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e70(15Nov2024:21:14:26): source ./xcelium.d/env.d/env.history.15Nov2024_21_14_26
+s70(15Nov2024:21:14:26):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e71(15Nov2024:21:15:23): source ./xcelium.d/env.d/env.history.15Nov2024_21_15_23
+s71(15Nov2024:21:15:23):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e72(15Nov2024:21:17:58): source ./xcelium.d/env.d/env.history.15Nov2024_21_17_58
+s72(15Nov2024:21:17:58):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e73(15Nov2024:21:22:54): source ./xcelium.d/env.d/env.history.15Nov2024_21_22_54
+s73(15Nov2024:21:22:54):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e74(15Nov2024:21:23:35): source ./xcelium.d/env.d/env.history.15Nov2024_21_23_35
+s74(15Nov2024:21:23:35):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e75(15Nov2024:21:27:26): source ./xcelium.d/env.d/env.history.15Nov2024_21_27_26
+s75(15Nov2024:21:27:26):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e76(15Nov2024:21:28:43): source ./xcelium.d/env.d/env.history.15Nov2024_21_28_43
+s76(15Nov2024:21:28:43):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=1 +epsilon_mult=1.0 +test_mode=0 +test_number=1 +input_dir=../inputs +info_level=0 +access+r 
+#e77(15Nov2024:21:28:52): source ./xcelium.d/env.d/env.history.15Nov2024_21_28_52
+s77(15Nov2024:21:28:52):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e78(16Nov2024:00:39:43): source ./xcelium.d/env.d/env.history.16Nov2024_00_39_43
+s78(16Nov2024:00:39:43):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e79(16Nov2024:01:19:21): source ./xcelium.d/env.d/env.history.16Nov2024_01_19_21
+s79(16Nov2024:01:19:21):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e80(16Nov2024:01:20:01): source ./xcelium.d/env.d/env.history.16Nov2024_01_20_01
+s80(16Nov2024:01:20:01):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e81(16Nov2024:01:22:20): source ./xcelium.d/env.d/env.history.16Nov2024_01_22_20
+s81(16Nov2024:01:22:20):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e82(16Nov2024:01:23:28): source ./xcelium.d/env.d/env.history.16Nov2024_01_23_28
+s82(16Nov2024:01:23:28):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e83(16Nov2024:01:38:31): source ./xcelium.d/env.d/env.history.16Nov2024_01_38_31
+s83(16Nov2024:01:38:31):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e84(16Nov2024:02:02:18): source ./xcelium.d/env.d/env.history.16Nov2024_02_02_18
+s84(16Nov2024:02:02:18):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e85(16Nov2024:02:03:51): source ./xcelium.d/env.d/env.history.16Nov2024_02_03_51
+s85(16Nov2024:02:03:51):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e86(16Nov2024:02:07:52): source ./xcelium.d/env.d/env.history.16Nov2024_02_07_52
+s86(16Nov2024:02:07:52):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e87(16Nov2024:02:08:20): source ./xcelium.d/env.d/env.history.16Nov2024_02_08_20
+s87(16Nov2024:02:08:20):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e88(16Nov2024:02:09:02): source ./xcelium.d/env.d/env.history.16Nov2024_02_09_02
+s88(16Nov2024:02:09:02):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e89(16Nov2024:02:09:48): source ./xcelium.d/env.d/env.history.16Nov2024_02_09_48
+s89(16Nov2024:02:09:48):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e90(16Nov2024:13:15:52): source ./xcelium.d/env.d/env.history.16Nov2024_13_15_52
+s90(16Nov2024:13:15:52):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e91(16Nov2024:13:16:21): source ./xcelium.d/env.d/env.history.16Nov2024_13_16_21
+s91(16Nov2024:13:16:21):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e92(16Nov2024:13:16:33): source ./xcelium.d/env.d/env.history.16Nov2024_13_16_33
+s92(16Nov2024:13:16:33):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e93(16Nov2024:13:19:35): source ./xcelium.d/env.d/env.history.16Nov2024_13_19_35
+s93(16Nov2024:13:19:35):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e94(16Nov2024:13:25:51): source ./xcelium.d/env.d/env.history.16Nov2024_13_25_51
+s94(16Nov2024:13:25:51):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
+#e95(16Nov2024:14:29:58): source ./xcelium.d/env.d/env.history.16Nov2024_14_29_58
+s95(16Nov2024:14:29:58):  xrun ../testbench/testbench.sv ../testbench/sram.sv ../rtl/dut.sv +TIMEOUT=1000000 +num_of_testcases=4 +test_mode=1 +epsilon_mult=1.0 +input_dir=../inputs +info_level=0 +access+r 
