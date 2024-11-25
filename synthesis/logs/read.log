@@ -1,0 +1,229 @@
+#------------------------------------------------------------
+#
+# Basic Synthesis Script (TCL format)
+#                                  
+# Revision History                
+#   1/15/03  : Author Shane T. Gehring - from class example
+#   2/09/07  : Author Zhengtao Yu      - from class example
+#   12/14/07 : Author Ravi Jenkal      - updated to 180 nm & tcl
+#
+#------------------------------------------------------------
+#---------------------------------------------------------
+# Read in Verilog file and map (synthesize) onto a generic
+# library.
+# MAKE SURE THAT YOU CORRECT ALL WARNINGS THAT APPEAR
+# during the execution of the read command are fixed 
+# or understood to have no impact.
+# ALSO CHECK your latch/flip-flop list for unintended 
+# latches                                            
+#---------------------------------------------------------
+read_verilog -rtl $::env(RTL_FILES)
+Error: Required argument 'file_list' was not found (CMD-007)
+read_sverilog -rtl $::env(RTL_SV_FILES)
+Loading db file '/mnt/coe/workspace/ece/ece720-common/tech/nangate/NangateOpenCellLibrary_PDKv1_2_v2008_10/liberty/520/NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm.db'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/libraries/syn/dw_foundation.sldb'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/libraries/syn/gtech.db'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm'
+  Loading link library 'gtech'
+Loading sverilog file '/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'
+Running PRESTO HDLC
+Compiling source file /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv
+Opening include file ../rtl/common/common.vh
+Opening include file /mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/dw/sim_ver/DW_piped_mac.v
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:103: the undeclared symbol 'Count1_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:104: the undeclared symbol 'Count1_stay' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:105: the undeclared symbol 'Count1_deduct' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:108: the undeclared symbol 'Count2_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:109: the undeclared symbol 'Count2_stay' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:110: the undeclared symbol 'Count2_deduct' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:114: the undeclared symbol 'Count3_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:118: the undeclared symbol 'RowNum_reg_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:119: the undeclared symbol 'XNum_reg_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:120: the undeclared symbol 'ColNum_reg_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:121: the undeclared symbol 'accum_result_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:122: the undeclared symbol 'CountDown' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:123: the undeclared symbol 'base_R_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:124: the undeclared symbol 'base_W_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:125: the undeclared symbol 'base_W_force' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:126: the undeclared symbol 'Base_S_en' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:354: the undeclared symbol 'pipe_full_inst' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:355: the undeclared symbol 'pipe_ovf_inst' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:357: the undeclared symbol 'arrive_inst' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:358: the undeclared symbol 'arrive_id_inst' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:359: the undeclared symbol 'push_out_n_inst' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:90: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:91: signed to unsigned assignment occurs. (VER-318)
+Warning:  /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv:92: signed to unsigned assignment occurs. (VER-318)
+Warning: Could not open default SVF file /mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/synthesis/svf/default.svf for writing.
+
+Statistics for case statements in always block at line 88 in file
+	'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            89            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 148 in file
+	'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           149            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 156 in file
+	'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           157            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 174 in file
+	'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           175            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 182 in file
+	'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           183            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine MyDesign line 80 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       cs_reg        | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 203 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     special_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 212 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    Row_done_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 221 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     Base_S_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 230 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     Base_W_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 241 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     Base_R_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 250 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     Count1_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 267 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     Count2_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 284 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     Count3_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 295 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    ACCUM_en_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 303 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   RowNum_reg_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 311 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    XNum_reg_reg     | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 326 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   ColNum_reg_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 334 in file
+		'/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Q_K_V_S_Z_reg_reg  | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/DW_piped_mac.db:DW_piped_mac'
+Loaded 3 designs.
+Current design is 'DW_piped_mac'.
+DW_piped_mac MyDesign DW_piped_mac_inst

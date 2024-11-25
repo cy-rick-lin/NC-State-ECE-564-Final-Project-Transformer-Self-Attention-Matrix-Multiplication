@@ -1,0 +1,287 @@
+//---------------------------------------------------------------------------
+// DUT - Mini project 
+//---------------------------------------------------------------------------
+`include "/mnt/ncsudrive/c/clin33/ECE_564/ece564_transformer_self_attention/rtl/common/common.vh"
+//`include "../rtl/common/common.vh"
+`include "/mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/dw/sim_ver/DW_piped_mac.v"
+
+module MyDesign(
+  //System signals
+    input wire reset_n                      ,  
+    input wire clk                          ,
+
+  //Control signals
+    input wire dut_valid                    , 
+    output wire dut_ready                   ,
+
+  //input SRAM interface
+    output wire                           dut__tb__sram_input_write_enable  ,               // 0 for Read
+    output wire [`SRAM_ADDR_RANGE     ]   dut__tb__sram_input_write_address ,               // x
+    output wire [`SRAM_DATA_RANGE     ]   dut__tb__sram_input_write_data    ,               // x
+    output wire [`SRAM_ADDR_RANGE     ]   dut__tb__sram_input_read_address  , 
+    input  wire [`SRAM_DATA_RANGE     ]   tb__dut__sram_input_read_data     ,               // Delay for one cycle
+
+  //weight SRAM interface
+    output wire                           dut__tb__sram_weight_write_enable  ,              // 0 for Read
+    output wire [`SRAM_ADDR_RANGE     ]   dut__tb__sram_weight_write_address ,              // x
+    output wire [`SRAM_DATA_RANGE     ]   dut__tb__sram_weight_write_data    ,              // x
+    output wire [`SRAM_ADDR_RANGE     ]   dut__tb__sram_weight_read_address  ,              //
+    input  wire [`SRAM_DATA_RANGE     ]   tb__dut__sram_weight_read_data     ,              // Delay for one cycle
+
+  //result SRAM interface
+    output wire                           dut__tb__sram_result_write_enable  ,              // 1 for write
+    output wire [`SRAM_ADDR_RANGE     ]   dut__tb__sram_result_write_address ,              
+    output wire [`SRAM_DATA_RANGE     ]   dut__tb__sram_result_write_data    ,              // Same cycle for data and address
+    output wire [`SRAM_ADDR_RANGE     ]   dut__tb__sram_result_read_address  ,              // x
+    input  wire [`SRAM_DATA_RANGE     ]   tb__dut__sram_result_read_data                    // x
+
+  );
+
+  parameter IDLE = 0;
+  parameter Get_Dat = 1;
+  parameter ACCUM = 2;
+  parameter WR = 3;
+
+  wire EndCalc;
+  wire [`SRAM_ADDR_RANGE] Size_W, Size_R;
+  wire [`SRAM_DATA_RANGE] acc_inst;
+
+
+  reg [1:0] cs, ns;
+
+  reg launch;
+  reg [1:0] Q_KS_VZ_reg;
+  reg [15:0] RowNum_reg;
+  reg [15:0] ColNum_reg;
+  reg [15:0] XNum_reg;
+
+  reg [15:0] Count1;
+  reg [15:0] Count2;
+  reg [15:0] Count3;
+
+  always_ff @(posedge clk or negedge reset_n) begin
+    if(!reset_n)
+      cs <= 0;
+
+    else
+      cs <= ns;
+  end
+
+  always_comb begin
+    case(cs)
+      IDLE: ns = (dut_valid) ? Get_Dat : IDLE;
+      Get_Dat: ns = (Count1==1) ? ACCUM : Get_Dat;
+      ACCUM: ns = (EndCalc) ? IDLE :
+              (XNum_reg==0) ? WR : ACCUM;
+      WR: ns = ACCUM;
+      default: ns = IDLE;
+    endcase
+  end
+
+  //--------------- Output Decoder-----------------
+  // Calculation ends when A reachs (RowNum) and B reachs(XNum * ColNum)
+
+  // Count1 for matrix A
+  assign Count1_en = (cs==Get_Dat && !Count1[0]) || (cs==ACCUM && XNum_reg!=0);
+  assign Count1_stay = (cs==WR && Count2>Size_W) || (cs==ACCUM && XNum_reg==0) || (cs==Get_Dat && Count1[0]);
+  assign Count1_deduct = (cs==WR);
+
+  // Count2 for matrix B
+  assign Count2_en = (cs==Get_Dat && Count1[0]) || (cs==ACCUM && XNum_reg!=0);
+  assign Count2_stay = (cs==ACCUM && XNum_reg==0) || (cs==WR && Count2!=Size_W);
+  assign Count2_deduct = (cs==WR && Count2>Size_W);
+
+  // Count3 for matrix C
+  assign Count3_en = (cs==WR);
+  assign EndCalc = (Count3==Size_R) && (cs==ACCUM);
+  assign dut__tb__sram_result_write_address = Count3;
+  assign dut__tb__sram_result_write_data = acc_inst;
+
+  // Input control
+  assign RowNum_reg_en = (cs==Get_Dat && Count1[0]);
+  assign XNum_reg_en = (cs==Get_Dat && Count1[0]) || (cs==WR);
+  assign ColNum_reg_en = (cs==Get_Dat && Count1[0]);
+  assign launch_en = (cs==ACCUM);
+  assign CountDown = (cs==ACCUM && XNum_reg!=0);
+
+  // Combinational
+  assign dut_ready = (cs==0);
+  assign dut__tb__sram_input_read_address = (XNum_reg==0 && cs==ACCUM) ? 0 : Count1;
+  assign dut__tb__sram_weight_read_address = Count2;
+  assign Size_W = tb__dut__sram_input_read_data[15:0] * ColNum_reg;
+  assign Size_R = RowNum_reg * ColNum_reg;
+
+  // SRAM control
+  assign dut__tb__sram_result_write_enable = (cs==WR);
+  assign dut__tb__sram_input_write_enable = 0;
+  assign dut__tb__sram_weight_write_enable = 0;
+
+
+  // Register
+  always_ff @(posedge clk or negedge reset_n) begin
+    if(!reset_n)
+      Q_KS_VZ_reg <= 0;
+
+    else if(EndCalc)
+      Q_KS_VZ_reg <= Q_KS_VZ_reg + 1;
+  end
+
+  always_ff @(posedge clk or negedge reset_n) begin
+    if(!reset_n)
+      Count1 <= 0;
+
+    else if(EndCalc)
+      Count1 <= 0;
+
+    else if(Count1_stay)
+      Count1 <= Count1;
+
+    else if(Count1_en)
+      Count1 <= Count1 + 1;
+
+    else if(Count1_deduct)
+      Count1 <= Count1 - tb__dut__sram_input_read_data[15:0];
+  end
+
+  always_ff @(posedge clk or negedge reset_n) begin
+    if(!reset_n)
+      Count2 <= 0;
+
+    else if(EndCalc)
+      Count2 <= 0;
+
+    else if(Count2_deduct)
+      Count2 <= Count2 - Size_W;
+
+    else if(Count2_stay)
+      Count2 <= Count2;
+
+    else if(Count2_en)
+      Count2 <= Count2 + 1;
+  end
+
+  always_ff @(posedge clk or negedge reset_n) begin
+    if(!reset_n)
+      Count3 <= 0;
+
+    else if(EndCalc)
+      Count3 <= 0;
+
+    else if(Count3_en)
+      Count3 <= Count3 + 1;
+  end
+
+  always_ff @(posedge clk or negedge reset_n) begin
+    if(!reset_n)
+      launch <= 0;
+
+    else
+      launch <= launch_en;
+  end
+
+  always_ff @(posedge clk or negedge reset_n) begin
+    if(!reset_n)
+      RowNum_reg <= 0;
+
+    else if(RowNum_reg_en)
+      RowNum_reg <= tb__dut__sram_input_read_data[31:16];
+  end
+
+  always_ff @(posedge clk or negedge reset_n) begin
+    if(!reset_n)
+      XNum_reg <= 0;
+
+    else if(EndCalc)
+      XNum_reg <= 0;
+
+    else if(XNum_reg_en)
+      XNum_reg <= tb__dut__sram_input_read_data[15:0];
+
+    else
+      XNum_reg <= XNum_reg - 1;
+  end
+
+  always_ff @(posedge clk or negedge reset_n) begin
+    if(!reset_n)
+      ColNum_reg <= 0;
+
+    else if(ColNum_reg_en)
+      ColNum_reg <= tb__dut__sram_input_read_data[15:0];
+  end
+
+  DW_piped_mac mac0( 
+    .clk(clk), 
+    .rst_n(reset_n), 
+    .init_n(0), 
+    .clr_acc_n(inst_clr_acc_n),             // Clear result
+    .a(tb__dut__sram_input_read_data), 
+    .b(tb__dut__sram_weight_read_data), 
+    .acc(acc_inst),                         // accumulation result
+    .launch(inst_launch),                   // Signal indicating doing mult and add
+    .launch_id(inst_launch_id),             // o
+    .pipe_full(pipe_full_inst),             // O
+    .pipe_ovf(pipe_ovf_inst),               // O
+    .accept_n(0),                           // 0
+    .arrive(arrive_inst),                   // O
+    .arrive_id(arrive_id_inst),             // O
+    .push_out_n(push_out_n_inst),           // O
+    .pipe_census(pipe_census_inst)          // O
+  );
+
+endmodule
+
+module DW_piped_mac_inst( 
+  inst_clk, inst_rst_n, inst_init_n, 
+  inst_clr_acc_n, inst_a, inst_b, acc_inst, inst_launch, inst_launch_id, 
+  pipe_full_inst, pipe_ovf_inst, inst_accept_n, arrive_inst, 
+  arrive_id_inst, push_out_n_inst, pipe_census_inst 
+  );
+  parameter inst_a_width = 31;
+  parameter inst_b_width = 31;
+  parameter inst_acc_width = 31;
+  parameter inst_tc = 0;
+  parameter inst_pipe_reg = 0;
+  parameter inst_id_width = 0;
+  parameter inst_no_pm = 1;
+  parameter inst_op_iso_mode = 0;
+  input inst_clk;
+  input inst_rst_n;
+  input inst_init_n;
+  input inst_clr_acc_n;
+  input [inst_a_width-1 : 0] inst_a;
+  input [inst_b_width-1 : 0] inst_b;
+  output [inst_acc_width-1 : 0] acc_inst;
+  input inst_launch;
+  input [inst_id_width-1 : 0] inst_launch_id;
+  output pipe_full_inst;
+  output pipe_ovf_inst;
+  input inst_accept_n;
+  output arrive_inst;
+  output [inst_id_width-1 : 0] arrive_id_inst;
+  output push_out_n_inst;
+  output [2 : 0] pipe_census_inst;
+
+  // Instance of DW_piped_mac 
+  DW_piped_mac #(
+    inst_a_width, inst_b_width, inst_acc_width,
+    inst_tc, inst_pipe_reg, inst_id_width, inst_no_pm
+    )
+    U1 ( 
+      .clk(inst_clk), 
+      .rst_n(inst_rst_n), 
+      .init_n(inst_init_n), 
+      .clr_acc_n(inst_clr_acc_n), 
+      .a(inst_a), 
+      .b(inst_b), 
+      .acc(acc_inst), 
+      .launch(inst_launch), 
+      .launch_id(inst_launch_id), 
+      .pipe_full(pipe_full_inst), 
+      .pipe_ovf(pipe_ovf_inst), 
+      .accept_n(inst_accept_n), 
+      .arrive(arrive_inst), 
+      .arrive_id(arrive_id_inst), 
+      .push_out_n(push_out_n_inst), 
+      .pipe_census(pipe_census_inst)
+    );
+endmodule
